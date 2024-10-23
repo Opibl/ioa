@@ -1,0 +1,23 @@
+# Conjuntos
+set SR := 1 2 3;  # Regiones proveedoras
+set DR := A B;    # Regiones demandantes
+
+# Parámetros
+param fixcost :=
+    1 1000
+    2 1500
+    3 1200;
+
+param capacity :=
+    1 500
+    2 700
+    3 600;
+
+param demand :=
+    A 300
+    B 400;
+
+param transp_cost :  A  B :=
+    1   4   6
+    2   2   3
+    3   5   8 ;
