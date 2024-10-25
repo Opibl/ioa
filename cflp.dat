@@ -6,7 +6,7 @@ set DR := A B;    # Regiones demandantes
 param fixcost :=
     1 1000
     2 1500
-    3 1200;
+    3 1300;
 
 param capacity :=
     1 500
