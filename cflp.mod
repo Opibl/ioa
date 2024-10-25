@@ -26,3 +26,9 @@ subject to Demand_Satisfaction{j in DR}:
 # No exceder la capacidad de las plantas abiertas
 subject to Capacity_Limit{i in SR}:
     sum{j in DR} Q[i,j] <= capacity[i] * y[i];
+
+
+
+# Solo una planta puede estar abierta
+subject to SingleSource:
+    sum{i in SR} y[i] == 1;
